@@ -16,11 +16,15 @@ def index():
 def read_form():
     # Get the form data as a python dictionary.
     data = request.form
-    
+
+    current_timestamp = datetime.now()
+    timestamp_string = current_timestamp.strftime("%Y-%m-%d %H:%M:%S")
+
+
     print(data)
 
     ## Return Information
-    new_character = {
+    raw_character_json = {
         'Character': {
             'Character Name': data['name'],
             'Character Age':  data['age'], 
@@ -55,10 +59,16 @@ def read_form():
 
         'Backend': {
             'Owner': data['username'],
-            'Recieved': f'now()',
+            'Recieved': f'{timestamp_string}',
             'Version': data['form-version'] 
         }
     }
+
+    new_character = raw_character_json
+
+    print(new_character)
+
+    return(raw_character_json)
 
 # Main function
 if __name__ == '__main__':

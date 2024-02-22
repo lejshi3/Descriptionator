@@ -30,6 +30,10 @@
 	fieldset {
 		margin: 16px 4px;
 	}
+
+	input[type=text] {
+		min-width: fit-content;
+	}
 	
 </style>
 
@@ -45,12 +49,12 @@
 			</section>
 			<section>
 				<label for="age">Age:</label>
-				<select name="age" id="age">
+				<select name="age" id="age" value="Adult">
 					<option value="baby">Baby</option>
 					<option value="child">Child</option>
 					<option value="teen">Teenager</option>
 					<option value="young adult">Young Adult</option>
-					<option value="adult">Adult</option>
+					<option selected="selected" value="adult">Adult</option>
 					<option value="elderly">Senior</option>
 					<option disabled>------</option>
 					<option value="30s">Thirtys (30s)</option>
@@ -74,18 +78,29 @@
 		<fieldset id="appearance-field">
 			<legend>Appearance</legend>
 			<section>
-				<label for="skin-color">Skin:</label>
-				<input type="color" name="skin-color" id="skin-color">
+				<label for="skin-color">Skin Color:</label>
+				<input name="skin-color" id="skin-color">
+			</section>
+			<section>
+				<label for="skin-traits">Skin Traits:</label>
 				<input name="skin-traits" id="skin-traits">
 			</section>
+			<hr>
 			<section>
-				<label for="eye-color">Eyes:</label>
-				<input type="color" name="eye-color" id="eye-color">
-				<input name="eye-traits" id="eye-traits">
+				<label for="eye-color">Eye Color:</label>
+				<input name="eye-color" id="eye-color">
 			</section>
 			<section>
-				<label for="hair-color">Hair:</label>
-				<input type="color" name="hair-color" id="hair-color">
+				<label for="eye-traits" id="eye-traits">Eye Traits:</label>
+				<input name="eye-traits" id="eye-traits">
+			</section>
+			<hr>
+			<section>
+				<label for="hair-color">Hair Color:</label>
+				<input name="hair-color" id="hair-color">
+			</section>
+			<section>
+				<label for="hair-traits">Hair Traits:</label>
 				<input name="hair-traits" id="hair-traits">
 			</section>
 		</fieldset>
@@ -93,11 +108,11 @@
 			<legend>Clothing</legend>
 			<section>
 				<label for="attire">Attire:</label>
-				<textarea name="attire" id="attire"></textarea>
+				<input name="attire" id="attire">
 			</section>
 			<section>
 				<label for="accessories">Accessories:</label>
-				<textarea name="accessories" id="accessories"></textarea>
+				<input name="accessories" id="accessories">
 			</section>
 		</fieldset>
 		<fieldset id="features-field">
