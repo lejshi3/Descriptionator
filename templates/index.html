@@ -31,7 +31,7 @@
 
 <body>
 	<h1>Character Generator</h1>
-	<form>
+	<form action="{{url_for('read_form')}}" method="post">
 		<input type="hidden" id="form-version" name="form-version" value="0.1.0">
 		<fieldset id="character-field">
 			<legend>Character</legend>
@@ -83,6 +83,17 @@
 				<label for="hair-color">Hair:</label>
 				<input type="color" name="hair-color" id="hair-color">
 				<input name="hair-traits" id="hair-traits">
+			</section>
+		</fieldset>
+		<fieldset id="clothing-field">
+			<legend>Clothing</legend>
+			<section>
+				<label for="clothing">Clothing:</label>
+				<input name="clothing" id="clothing">
+			</section>
+			<section>
+				<label for="accessories">Accessories:</label>
+				<input name="accessories" id="accessories">
 			</section>
 		</fieldset>
 		<fieldset id="features-field">
