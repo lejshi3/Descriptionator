@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<style>
+	label { 
+		display: inline-block; 
+		height: 32px;
+
+		min-width: 10%;
+		margin-right: 2vw;
+	}
+
+	section > * {
+		display: inline-block;
+		min-width: fit-content;
+		
+		vertical-align: text-top;
+	}
+	
+	section {
+		min-height: 24px;
+		padding: 6px;
+	}
+	
+</style>
+
+<body>
+	<h1>Character Generator</h1>
+	<form>
+		<input type="hidden" id="form-version" name="form-version" value="0.1.0">
+		<fieldset id="character-field">
+			<legend>Character</legend>
+			<section>
+				<label for="name">Name:</label>
+				<input name="name" id="name">
+			</section>
+			<section>
+				<label for="age">Age:</label>
+				<select name="age" id="age">
+					<option value="baby">Baby</option>
+					<option value="child">Child</option>
+					<option value="teen">Teenager</option>
+					<option value="young adult">Young Adult</option>
+					<option value="adult">Adult</option>
+					<option value="elderly">Senior</option>
+					<option disabled>------</option>
+					<option value="30s">Thirtys (30s)</option>
+					<option value="40s">Fourties (40s)</option>
+					<option value="50s">Fifties (50s)</option>
+					<option value="60s">Sixties (60s)</option>
+					<option value="70s">Seventies (70s)</option>
+					<option value="80s">Eighties (80s)</option>
+				</select>
+			</section>
+			<section>
+				<label for="sex">Sex: </label>
+				<div>
+					<input type="radio" name="sex" id="male" value="male">
+					<label for="male">Male</label>
+					<input type="radio" name="sex" id="female" value="female">
+					<label for="female">Female</label>
+				</div>
+			</section>
+		</fieldset>
+		<fieldset id="appearance-field">
+			<legend>Appearance</legend>
+			<section>
+				<label for="skin-color">Skin:</label>
+				<input type="color" name="skin-color" id="skin-color">
+				<input name="skin-traits" id="skin-traits">
+			</section>
+			<section>
+				<label for="eye-color">Eyes:</label>
+				<input type="color" name="eye-color" id="eye-color">
+				<input name="eye-traits" id="eye-traits">
+			</section>
+			<section>
+				<label for="hair-color">Hair:</label>
+				<input type="color" name="hair-color" id="hair-color">
+				<input name="hair-traits" id="hair-traits">
+			</section>
+		</fieldset>
+		<fieldset id="features-field">
+			<legend>Features</legend>
+			<section>
+				<label for="profession">Profession:</label>
+				<input name="profession" id="profession">
+			</section>
+			<section>
+				<label for="portrait-style">Style:</label>
+				<input name="portrait-style" id="portrait-style">
+			</section>
+			<section>
+				<label for="expression">Expresssion:</label>
+				<input name="expression" id="expression">
+			</section>
+		</fieldset>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+
+</html>
