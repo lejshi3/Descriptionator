@@ -27,6 +27,10 @@
 		padding: 6px;
 	}
 	
+	fieldset {
+		margin: 16px 4px;
+	}
+	
 </style>
 
 <body>
@@ -88,12 +92,12 @@
 		<fieldset id="clothing-field">
 			<legend>Clothing</legend>
 			<section>
-				<label for="clothing">Clothing:</label>
-				<input name="clothing" id="clothing">
+				<label for="attire">Attire:</label>
+				<textarea name="attire" id="attire"></textarea>
 			</section>
 			<section>
 				<label for="accessories">Accessories:</label>
-				<input name="accessories" id="accessories">
+				<textarea name="accessories" id="accessories"></textarea>
 			</section>
 		</fieldset>
 		<fieldset id="features-field">
@@ -111,8 +115,13 @@
 				<input name="expression" id="expression">
 			</section>
 		</fieldset>
-		<input type="submit" value="Submit">
+		<fieldset id="submission-field">
+			<legend>Submittion</legend>
+			<section>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username">
+				<input type="submit" value="Submit">
+			</section>
 	</form>
 </body>
-
 </html>

@@ -1,4 +1,6 @@
 from flask import Flask, request, render_template
+from datetime import datetime
+import json
 
 # Flask Constructor
 app = Flask(__name__)
@@ -15,22 +17,47 @@ def read_form():
     # Get the form data as a python dictionary.
     data = request.form
     
+    print(data)
+
     ## Return Information
-    return {
-        'Character Name': data['name'],
-        'Character Age':  data['age'], 
-        'Character Sex':  data['sex'],
-        'Skin Color':   data['skin-color'],
-        'Skin Traits':  data['skin-traits'],
-        'Eye Color':    data['eye-color'],
-        'Eye Traits':   data['eye-traits'],
-        'Hair Color':   data['hair-color'],
-        'Hair Traits':  data['hair-traits'],
-        'Clothing':     data['clothing'],
-        'Clothing Accessories':  data['accessories'],
-        'Profession':   data['profession'],
-        'Portrait Style':   data['portrait-style'],
-        'Character Expression':   data['expression'],
+    new_character = {
+        'Character': {
+            'Character Name': data['name'],
+            'Character Age':  data['age'], 
+            'Character Sex':  data['sex'],
+            'Character Expression':   data['expression'],
+            'Character Profession':   data['profession'],
+        },
+        
+        'Appearance': {
+            'Skin': {
+                'Skin Color':   data['skin-color'],
+                'Skin Traits':  data['skin-traits']
+            },
+            'Eyes': {
+                'Eye Color':    data['eye-color'],
+                'Eye Traits':   data['eye-traits']
+            },
+            'Hair': {
+                'Hair Color':   data['hair-color'],
+                'Hair Traits':  data['hair-traits']
+            }
+        },
+        
+        'Clothing': {
+            'Worn Attire':     data['attire'],
+            'Worn Accessories':  data['accessories']
+        },
+
+        'Style': {
+            'Portrait Style':   data['portrait-style'],
+        },
+
+        'Backend': {
+            'Owner': data['username'],
+            'Recieved': f'now()',
+            'Version': data['form-version'] 
+        }
     }
 
 # Main function
