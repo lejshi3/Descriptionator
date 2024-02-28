@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    build: .
+    image: python:3.12.2-slim
     command: python app.py
     ports:
       - "5000:5000"
@@ -11,6 +11,4 @@ services:
     environment:
       - FLASK_APP=app.py
       - FLASK_ENV=development
-
-volumes:
-  data:
+      # Add other environment variables if needed
