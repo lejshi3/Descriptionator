@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="main.css"> 
+    <title>Login</title>
+</head>
+<body>
+    <form action="{{url_for('read_form')}}" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <section>
+                <label for="email-input">Email:</label>
+                <input type="email" name="email" id="email-input">
+            </section>
+            <section>
+                <label for="password-input">Password:</label>
+                <input type="password" name="password" id="password-input">
+            </section>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>

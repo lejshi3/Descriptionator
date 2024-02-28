@@ -1,0 +1,27 @@
+label { 
+    display: inline-block; 
+    height: 32px;
+
+    min-width: 10%;
+    margin-right: 2vw;
+}
+
+section > * {
+    display: inline-block;
+    min-width: fit-content;
+    
+    vertical-align: text-top;
+}
+
+section {
+    min-height: 24px;
+    padding: 6px;
+}
+
+fieldset {
+    margin: 16px 4px;
+}
+
+input[type=text] {
+    min-width: fit-content;
+}

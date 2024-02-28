@@ -1,0 +1,124 @@
+<!doctype HTML>
+<html lang="en">
+    <style>
+        body > * {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            margin: 8px;
+            padding: 0;
+        }
+
+        fieldset {
+            border-radius: 4px;
+            margin: 2px;
+            padding: 0;
+        }
+
+        fieldset > * {
+            margin: 0;
+        }
+
+        fieldset form > * {
+            margin: 4px 0;
+        }
+
+        legend {
+            padding: 0 4px;
+            font-size: 14pt;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        header {
+            background-color: #c70000;
+            display: block;
+            height: 36px;
+            margin: 0px;
+        }
+
+        div#prime {
+            margin: auto;
+            max-width: 1024px;
+            justify-content: center;
+            display: grid;
+            margin: 0 auto; /* Center the container horizontally */
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 10px;
+            background-color: #fefefe;
+        }
+
+        div#prime > * {
+
+            }
+
+        aside {
+        }
+    </style>
+    <head>
+
+    </head>
+    <body>
+        <div id="prime">
+            <aside>
+                <fieldset>
+                    <header></header>
+                </fieldset>
+                <fieldset>
+                    <legend>Info</legend>
+                    <p>Year 5, Month 2</p>
+                        </tr>
+                            <td>Nation:</td>
+                            <td>Solian Federation</td>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Login</legend>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input id="username" name="username" type="text">
+                        <label for="password">Password:</label>
+                        <input id="pwd" name="pwd" type="password">
+                        <input type="submit" value="Submit">
+                    </form>
+                </fieldset>
+                <fieldset>
+                    <legend>Actions</legend>
+                    <ul>
+                        <li><a href="">Your Home</a></li>
+                        <li><a href="">Your Characters</a></li>
+                        <li><a href="">Your Country</a></li>
+                    </ul>
+                </fieldset>
+            </aside>
+            <main>
+                <fieldset>
+                    <legend>Map</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>News</legend>
+                    <p>This is the news.</p>
+                </fieldset>
+            </main>
+            <aside id="sponsored">
+                <fieldset>
+                    <legend>Sponsor</legend>
+                    <img src='https://placebear.com/160/600'>
+                </fieldset>
+            </aside>
+        </div>
+    </body>
+</html>
