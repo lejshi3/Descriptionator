@@ -1,169 +1,20 @@
 <!doctype HTML>
 <html lang="en">
     <style>
-        /* General Styles */
-        body {
-            margin: 8px;
-            padding: 0;
-            font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
-            background-color: #222;
-            color: #fff;
-            display: flex;
-            flex-flow: column;
-            height: 100%;
+        * {
+            background-color: #2222;
+            border: 1px solid black
         }
-
-        /* Typography */
-        p,
-        a {
-            font-size: 13pt;
-        }
-
-        a {
-            text-decoration: none; /* Remove underline from links */
-        }
-
-        a:link {
-            color: #f7c700;
-        }
-
-        a:visited {
-            color: #f79700;
-        }
-
-        a:hover {
-            background-color: #fff;
-            color: #222;
-        }
-
-        /* Forms */
-        fieldset {
-            border: 2px solid #fff;
-            border-radius: 6px;
-            padding: 4px;
-            margin: 6px;
-            overflow: hidden;
-        }
-
-        fieldset > * {
-            margin: 2px;
-            display: inline-block;
-        }
-
-        legend {
-            font-size: 15pt;
-            font-weight: bold;
-            line-height: 1;
-            padding: 0 10px;
-            margin: 0;
-        }
-
-        /* Layout */
-        header {
-            flex: 0 1 36px;
-            background-color: #f7c700;
-            border-radius: 6px;
-        }
-
-        ul {
-            padding-left: 16px;
-            margin: 4px;
-        }
-
-        li {
-            margin: 8px;
-        }
-
-        article {
-            background-color: #fff2;
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 8px;
-        }
-
-        article p {
-            margin: 8px;
-            padding: 8px;
-            line-height: 1.25;
-        }
-
-        /* Specific Styles */
-        section form > * {
-            margin: 4px 0 8px 0;
-        }
-
-        div#web-header,
-        div.article-heading {
-            padding: 8px;
-            background-color: #fff2;
-            border-radius: 4px; /* Consistent border radius */
-        }
-
-        div.article-heading h1,
-        div.article-heading h2,
-        div.article-heading h3,
-        div.article-heading h4 {
-            margin: 8px;
-        }
-
-        #prime {
-            flex: 0 1 auto;
-            max-width: 1024px;
-            border-radius: 6px;
-            overflow-y: hidden;
-            display: grid;
-            grid-template-columns: min-content 5fr;
-            padding: 2px;
-            gap: 0px;
-            background-color: #fff2;
-            margin: 4px auto;
-        }
-
-        aside#sponsored {
-            display: none;
-        }
-
-        #news {
-            flex: 1 1 auto;
-            overflow-y: auto;
-        }
-
-
-        main {
-            display: flex;
-            flex-flow: column;
-            height: 91.5vh;
-        }
-
-        header h1 {
-            font-size: 16pt;
-            padding: 0;
-            margin: auto;
-        }
-
     </style>
     <head>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <h1>yearth.xyz</h1>
+            <h1>Soltr</h1>
         </header>
-        <div id="prime">
+        <div>
             <aside>
-                <fieldset>
-                <legend>Info</legend>
-                <table>
-                    <tr>
-                        <td>Date:</td>
-                        <td>Year 5, Month 2</td>
-                    </tr>
-                    <tr>
-                        <td>Nation:</td>
-                        <td>Solian Federation</td>
-                    </tr>
-                    </table>
-                </fieldset>
                 <fieldset>
                     <legend>Login</legend>
                     <form>
@@ -174,57 +25,12 @@
                         <input type="submit" value="Submit">
                     </form>
                 </fieldset>
-                <fieldset>
-                    <legend>Actions</legend>
-                    <ul>
-                        <li><a href="">Your Home</a></li>
-                        <li><a href="">Your Characters</a></li>
-                        <li><a href="">Your Country</a></li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Sponsor</legend>
-                    <img src='https://placebear.com/200/200'>
-                </fieldset>
             </aside>
             <main>
-                <fieldset id="news">
-                    <legend>News</legend>
-                    <article>
-                        <div class = "article-heading">
-                            <h3>The Solian Press</h3>
-                            <h1>Yooper secedes from the Blixt Imperium</h1>
-                            <hr>
-                            <h4>Cooper Smith | Year 5, Month 1</h4>
-                        </div>
-                        <p>In an absolutely unprecedented move, the local leadership of the Yooper Tribe declared its own independence and cut diplomatic ties with the Blixt Imperium</p>
-                    </article>
-                    <article>
-                        <div class = "article-heading">
-                            <h3>The Solian Press</h3>
-                            <h1>Yooper secedes from the Blixt Imperium</h1>
-                            <hr>
-                            <h4>Cooper Smith | Year 5, Month 1</h4>
-                        </div>
-                        <p>In an absolutely unprecedented move, the local leadership of the Yooper Tribe declared its own independence and cut diplomatic ties with the Blixt Imperium</p>
-                    </article>
-                    <article>
-                        <div class = "article-heading">
-                            <h3>The Solian Press</h3>
-                            <h1>Yooper secedes from the Blixt Imperium</h1>
-                            <hr>
-                            <h4>Cooper Smith | Year 5, Month 1</h4>
-                        </div>
-                        <p>In an absolutely unprecedented move, the local leadership of the Yooper Tribe declared its own independence and cut diplomatic ties with the Blixt Imperium</p>
-                    </article>
-                </fieldset>
+                <article>
+                    <h2><strong>Samyra Cruz</strong> @PM</h2>
+                </article>
             </main>
-            <aside id="sponsored">
-                <fieldset>
-                    <legend>Sponsor</legend>
-                    <img src='https://placebear.com/200/200'>
-                </fieldset>
-            </aside>
         </div>
     </body>
 </html>
